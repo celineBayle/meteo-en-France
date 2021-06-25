@@ -21,9 +21,9 @@ export const getHueFromTemperature = (temperature: number): number => {
 };
 
 export const realfeel = (temperature: number): string => {    
-        if(temperature < 15) {
+        if(temperature <  15 ) {
             return  "froid";
-        } else if(temperature > 16 && temperature < 24) {
+        } else if(temperature > 15 && temperature < 25) {
             return  "doux";     
         } else if(temperature > 25) {
             return "chaud";
