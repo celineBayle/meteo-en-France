@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'reset-css';
 import './index.css';
-import App from './App';
+import Meteo from './components/Meteo';
 import reportWebVitals from './reportWebVitals';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Meteo />
   </React.StrictMode>,
   document.getElementById('root')
 );

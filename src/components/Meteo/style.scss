@@ -1,0 +1,48 @@
+.meteo {
+    max-width: 1000px;
+    height:80vh;
+    margin:1rem auto;
+    text-align: center;    
+    transition: background-color 1s ease;
+    &-titre{
+        font-size: 4rem;
+        height: 100px;
+        padding-top: 40px;
+        border-bottom: 1px solid grey;
+    }
+    &-form {
+        margin: 4rem 1rem;
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+    }
+    &-search{
+        width: 8rem;
+        height:3rem;
+        padding:1em 2em;
+        margin-left:1rem;
+        color: #FFF;
+        background-color: hsl(100, 100%, 40%);
+        border:none;
+        border-radius: 3px;
+
+        &:hover{
+            background-color: hsl(100,100%,50%);
+        }
+    }
+    &-ville {
+        font-size: 2rem;
+    }
+    &-temperature {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    &-phrase {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }    
+}
+
+.visible {
+    visibility: visible;
+}
