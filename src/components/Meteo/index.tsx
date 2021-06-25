@@ -24,7 +24,7 @@ const Meteo = () => {
       }, [city,temperature]);
     
     //Changement de couleur et ressenti
-    const hue = getHueFromTemperature(temperature);
+    const hue:number = getHueFromTemperature(temperature);
     const feeling = realfeel(temperature); 
     
     return (
@@ -40,7 +40,7 @@ const Meteo = () => {
                     name="cityName"
                     className ="meteo-form" 
                     placeholder="Entrez une ville" 
-                    Value={city}
+                    value={city}
                     onChange={(e) => setCity(e.target.value)}       
                 />        
             </form> 

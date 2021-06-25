@@ -1,4 +1,4 @@
-export const getHueFromTemperature = (temperature) => {
+export const getHueFromTemperature = (temperature: number): number => {
     let limitedTemperature = temperature;
 
     // je borne notre temperature entre 2 valeurs extremes
@@ -20,7 +20,7 @@ export const getHueFromTemperature = (temperature) => {
     return hue;
 };
 
-export const realfeel = (temperature) => {    
+export const realfeel = (temperature: number): string => {    
         if(temperature < 15) {
             return  "froid";
         } else if(temperature > 16 && temperature < 24) {
